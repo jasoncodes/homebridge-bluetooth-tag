@@ -15,7 +15,7 @@ These are typically listed to be used with the "iTracing" mobile app.
   {
     "accessory": "Bluetooth Tag",
     "name": "Bedroom Light Switch",
-    "address": "0123456789ab"
+    "address": "01:23:45:67:89:ab"
   }
 ]
 ```
@@ -23,4 +23,4 @@ These are typically listed to be used with the "iTracing" mobile app.
 The `address` is optional. If omitted, the first device found will be used.
 It is however recommended to set the address to avoid inadvertent connection to the wrong device.
 The easiest way to find the address is to start the plugin without an address and then check the logs.
-You should see output like `connecting iTAG (0123456789ab)`.
+You should see output like `connecting iTAG (01:23:45:67:89:ab)`.
