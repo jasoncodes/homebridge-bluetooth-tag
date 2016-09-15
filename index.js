@@ -99,9 +99,9 @@ TagAccessory.prototype.onDiscoverServicesAndCharacteristics = function(error, se
 TagAccessory.prototype.identify = function(callback) {
   this.log('identify');
   if (this.peripheral) {
-    this.alertCharacteristic.write(Buffer.from([0x02]), true);
+    this.alertCharacteristic.write(new Buffer([0x02]), true);
     setTimeout(function() {
-      this.alertCharacteristic.write(Buffer.from([0x00]), true);
+      this.alertCharacteristic.write(new Buffer([0x00]), true);
     }.bind(this), 250);
     callback();
   } else {
